@@ -1,7 +1,7 @@
 import axios from 'axios';
 
 // axios instance
-const api = axios.create({ baseURL: process.env.REACT_APP_STOCKS_API });
+const api = axios.create({ baseURL: "https://mockstock--backen.herokuapp.com/" });
 
 // send jwt token in request if user is logged in
 api.interceptors.request.use((req) => {

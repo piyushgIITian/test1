@@ -7,7 +7,7 @@ import ShowcaseCardSkeleton from "./ShowcaseCardSkeleton";
 import ShowcaseCard from "./ShowcaseCard";
 
 const Showcase = () => {
-  const socket = socketIOClient(process.env.REACT_APP_STOCKS_API, { transports: ['websocket', 'polling', 'flashsocket'] });
+  const socket = socketIOClient("https://mockstock--backen.herokuapp.com/", { transports: ['websocket', 'polling', 'flashsocket'] });
   const stocks = useSelector((state) => state.stocksReducer);
   const dispatch = useDispatch();
 
